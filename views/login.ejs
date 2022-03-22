@@ -1,0 +1,48 @@
+
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+
+<h1> Login to BookFace</h1>
+<%- include ('./partials/message') %>
+
+<form action="/users/login" method="POST">
+<div>
+<label for="email">Email</label>
+<input class="login__input
+type="email"
+name="email"
+placeholder="Enter Email"
+/>
+</div>
+<div>
+    <label for="password">Password</label>
+    <input class="login__input"
+      type="password"
+      name="password"
+      placeholder="Enter Password"
+      value="<%= typeof password != 'undefined' ? password : '' %>"
+    />
+  
+</div>
+<button class="button login__submit type="submit" class="btn btn-primary btn-block">Login</button>
+   
+</form> 
+<p >No account yet? <a href="/users/register">Register</a></p> 
+</div>
+
+<div class="screen__background">
+      <span class="screen__background__shape screen__background__shape4"></span>
+      <span class="screen__background__shape screen__background__shape3"></span>    
+      <span class="screen__background__shape screen__background__shape2"></span>
+      <span class="screen__background__shape screen__background__shape1"></span>
+    </div>    
+  </div>
+
+
+
+
+
+
+
+
